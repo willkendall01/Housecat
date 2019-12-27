@@ -10,12 +10,11 @@
   left: 0;
   right: 0;
   font-size: 18px;
-  background-color: rgba(0, 76, 153,.15);
+  background-color: rgba(0, 76, 153,0);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-  font-family: Copperplate-Light, Avenir Next, Georgia;
+  padding-bottom: 15px;
+  font-family: Futura, Copperplate-Light, Avenir Next, Georgia;
   z-index: 2000;
-
 }
 
 .main-nav {
@@ -35,32 +34,8 @@
   margin: 15px auto;
 }
 
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.navbar-toggle {
-  position: absolute;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-  justify-content: center;
-  text-align: center;
-  top: 19px;
-  right: 20px;
-}
 
 
-#chkToggle {
-  display: none;
-}
-
-#chkToggle:checked + ul.main-nav {
-  display: block;
-}
 
 @media screen and (min-width: 768px) {
   .navbar {
@@ -110,16 +85,13 @@
     display: none;
   }
 
-  .nav-links:hover {
-    background-color: #3C4245;
-  }
 }
 
 body {
   margin-top: 80px;
   background-color: #000000;
   padding: 30px;
-  font-family: Copperplate-Light, Avenir Next, Georgia;
+  font-family: Futura, Copperplate-Light, Avenir Next, Georgia;
   background-image: url("Capture.PNG");
   background-repeat: no-repeat;
   background-size: cover;
