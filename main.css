@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  background-color: rgba(0, 76, 153,.15);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+  font-family: Copperplate-Light, Avenir Next, Georgia;
+  z-index: 2000;
+
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #fff;
+  padding: 11px 25px;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  top: 19px;
+  right: 20px;
+}
+
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: baseline;
+    z-index: 2000;
+  }
+
+   #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+    bottom: -9px;
+    position: relative;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 0;
+    font-size: 45px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    background-color: #3C4245;
+  }
+}
+
+body {
+  margin-top: 80px;
+  background-color: #000000;
+  padding: 30px;
+  font-family: Copperplate-Light, Avenir Next, Georgia;
+  background-image: url("Capture.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
